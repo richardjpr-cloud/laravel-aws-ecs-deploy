@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Logging in to Amazon ECR....
       - aws --version
-      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 258975980349.dkr.ecr.ap-south-1.amazonaws.com
+      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 056611633396.dkr.ecr.ap-south-1.amazonaws.com
       - REPOSITORY_URI=258975980349.dkr.ecr.ap-south-1.amazonaws.com/laravel-aws
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
  
